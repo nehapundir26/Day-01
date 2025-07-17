@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #001f3f;
+  color: white;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+  background-color: #001a33;
+}
+.logo {
+  font-size: 24px;
+  font-family: serif;
+}
+.nav-links a {
+  color: white;
+  margin-left: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #ffd700;
+}
+.menu-button {
+  background-color: #003366;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-left: 20px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+.menu-button:hover {
+  background-color: #004080;
+  color: #ffd700;
+}
+
+/* HERO */
+.hero {
+  background: url('https://www.datocms-assets.com/128889/1714657126-bakers-bay-golf-and-ocean-club-copy.jpg?auto=format&fit=max&h=3000&w=2000') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 64px;
+  font-style: italic;
+  font-weight: normal;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+/* GALLERY */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 60px;
+}
+.gallery-item {
+  overflow: hidden;
+  border-radius: 8px;
+  text-align: center;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+.gallery-item p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #001a33;
+  padding: 40px 60px 20px;
+  color: #ccc;
+  font-size: 14px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+.footer-section h3 {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.footer-section p,
+.footer-section a {
+  color: #ccc;
+  text-decoration: none;
+  margin-bottom: 5px;
+  display: block;
+}
+.footer-section a:hover {
+  color: #ffd700;
+}
+.footer-section ul {
+  list-style: none;
+}
+.footer-section li {
+  margin-bottom: 5px;
+}
+.footer-bottom {
+  border-top: 1px solid #003355;
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  font-size: 13px;
+  color: #888;
+}
